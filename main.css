@@ -1,0 +1,383 @@
+/* font-family: 'Poppins', sans-serif;
+ */
+
+body {
+    background: #121829;
+    max-width: 1440px;
+    height: 1752px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* limiter */
+
+.limiter {
+    margin: 0 auto;
+    width: 1200px;
+    height: inherit;
+    padding: 0 80px;
+}
+
+/* header */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-bottom: 80px;
+}
+
+/* nav */
+
+.nav {
+    display: flex;
+    width: 400px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.5s ease all;
+}
+
+
+
+.nav:hover {
+    background-color: #142447;
+    border-radius: 20px;
+}
+
+.nav a {
+    display: flex;
+    justify-content: space-around;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A8AEBF;
+    text-decoration: none;
+    transition: 0.5s ease all;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.nav a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+}
+
+
+
+.login_link {
+    display: flex;
+    align-items: center;
+}
+
+.login_logo {
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.login_logo:hover {
+    color: white;
+}
+
+/* main */
+
+.main {
+    width: 550px;
+    height: max-content;
+    margin-bottom: 80px;
+}
+
+.tittle_wrap {
+    margin-bottom: 15px;
+}
+
+.tittle_wrap h1 {
+    font-size: 64px;
+    line-height: 80px;
+    color: #EBEEF5;
+    font-weight: 600;
+}
+
+.main_info_wrap {
+    margin-bottom: 25px;
+}
+
+.main_info_wrap span {
+    color: #8E95A9;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+
+.search_wrap input {
+    background-color: inherit;
+    text-align: start;
+    padding: 0 20px;
+    outline: none;
+    border: 1px solid gray;
+    width: 345px;
+    height: 65px;
+    color: gray;
+    transition: 0.5s ease all;
+}
+
+.search_wrap input:hover {
+    border-color: #00c3ff;
+    border-radius: 12px;
+    color: white;
+}
+
+/* input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+} */
+
+/* categories */
+
+.categories_wrap {
+    background-color: #0C2236;
+    border-radius: 12px;
+    max-width: 370px;
+    height: 55px;
+    margin-bottom: 25px;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.categories label {
+    color: rgba(142, 149, 169, 1);
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+
+.allFilms {
+    font-weight: 600;
+    color: rgba(142, 149, 169, 1);
+}
+
+.all_films_wrap {
+    margin-bottom: 24px;
+
+}
+
+.categories_wrap label {
+    color: rgba(142, 149, 169, 1);
+    padding: 15px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+input[name="select_film"]:checked+label {
+    background-color: rgba(123, 110, 246, 1);
+    color: rgba(235, 233, 254, 1);
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* films list */
+
+.filmsList {
+    width: 100%;
+    max-height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.film {
+    background-color: rgba(32, 40, 62, 0.8);
+    border-radius: 12px;
+    width: 280px;
+    height: 480px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    cursor: pointer;
+}
+
+.filmName {
+    color: rgba(142, 149, 169, 1);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cover {
+    width: 90%;
+    height: 90%;
+    margin-bottom: 10px;
+}
+
+/* pagination */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageRadios {
+    display: none;
+}
+
+
+
+.paginationStyle {
+    color: rgba(142, 149, 169, 1);
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(142, 149, 169, 0);
+}
+
+input[name="selectPage"]:checked+label {
+    border-bottom: 2px solid rgba(142, 149, 169, 1);
+}
+
+
+/* user */
+
+
+
+.loginWrapper {
+    position: absolute;
+    width: 70%;
+    height: 80vh;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #121829;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid rgba(123, 110, 246, 1);
+}
+
+.userWrapper img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.loginText {
+    color: rgba(195, 200, 212, 1);
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.loginInputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.regBtn {
+    box-sizing: border-box;
+    outline: none;
+    width: 400px;
+    height: 60px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    padding: 0 20px;
+    background-color: rgba(50, 59, 84, 1);
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(71, 80, 105, 1);
+    border: 1px solid rgba(71, 80, 105, 1);
+    transition: 0.5s ease all;
+}
+
+.regBtn:focus {
+    border-color: rgba(123, 110, 246, 1);
+}
+
+.loginBtn {
+    background-color: rgba(123, 110, 246, 1);
+    border: none;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+
+.registrationLinkWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.registrationLinkWrap span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.registrationLinkWrap a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #A8AEBF;
+    transition: 0.3s ease all;
+}
+
+.registrationLinkWrap a:hover {
+    color: #ffffff;
+}
+
+/* register */
+
+.registrationWrapper {
+    position: absolute;
+    width: 70%;
+    height: 80vh;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #19233d;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid rgba(123, 110, 246, 1);
+}
+
+.registerInputsWrappers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.registerTxt {
+    color: rgba(195, 200, 212, 1);
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 600;
+}

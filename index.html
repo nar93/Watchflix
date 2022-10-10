@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Watchflix</title>
+</head>
+
+<body>
+    <div class="limiter">
+
+        <header class="header">
+            <div class="logo_wrap">
+                <img src="./assets/images/logo.png" alt="logo">
+            </div>
+
+            <nav class="nav">
+                <a href="#">Сериалы</a>
+                <a href="#">О нас</a>
+                <div class="nav_login">
+                    <a class="login_link" href="#">
+                        Войти
+                    </a>
+                </div>
+                <div class="userWrapper">
+                    <img class="userLogoImg" src="" alt="user_logo">
+                </div>
+
+            </nav>
+
+
+        </header>
+
+        <main class="main">
+            <div class="tittle_wrap">
+                <h1>Watchflix</h1>
+            </div>
+            <div class="main_info_wrap">
+                <span>Попытка найти лучший фильм для просмотра в Интернете может быть сложной задачей.
+                    Бесплатная потоковая передача фильмов и фильмы.</span>
+            </div>
+            <div class="search_wrap">
+                <input type="search" placeholder="Поиск фильма или сериала...">
+            </div>
+        </main>
+
+        <div class="categories_wrap">
+
+
+            <div class="categories">
+
+                <input value="all" id="all" type="radio" name="select_film" checked>
+                <label for="all">Все</label>
+
+                <input value="films" id="films" type="radio" name="select_film">
+                <label for="films">Фильмы</label>
+
+                <input value="serious" id="serious" type="radio" name="select_film">
+                <label for="serious">Сериалы</label>
+            </div>
+
+
+        </div>
+        <div class="all_films_wrap">
+            <span class="allFilms">Все</span>
+        </div>
+
+
+        <div class="filmsList">
+
+        </div>
+
+        <div class="pagination_wrap">
+            <div class="pagination">
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="loginWrapper">
+        <span class="loginText">
+            Логин
+        </span>
+
+        <div class="loginInputs">
+            <input class="regBtn enterLogin" type="text" placeholder="Введите ваш логин">
+            <input class="regBtn enterPassword" type="password" placeholder="Введите ваш пороль">
+            <input class="regBtn loginBtn" type="button" value="Логин">
+        </div>
+
+        <div class="registrationLinkWrap">
+            <span class="dontHaveAcc">Впервые у нас?</span>
+            <a class="registerBtn" href="#">Регистрация</a>
+        </div>
+
+
+    </div>
+
+    <div class="registrationWrapper">
+        <span class="registerTxt">
+            Регистрация
+        </span>
+
+        <div class="registerInputsWrappers">
+            <input class="regBtn userLogin" type="text" placeholder="Ваша имя / логин">
+            <input class="regBtn userPassword" type="text" placeholder="Ваш пороль">
+            <input class="regBtn userLastName" type="text" placeholder="Ваша фамилия">
+            <select class="regBtn userGender" name="gender" id="">
+                <option value="empty">Select Your Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input class="regBtn loginBtn register" type="button" name="" id="" value="Регистрация">
+        </div>
+    </div>
+    
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
